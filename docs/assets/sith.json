@@ -1,0 +1,145 @@
+[
+    {
+        "name": "Anakin Skywalker", 
+        "height": "188", 
+        "mass": "84", 
+        "hair_color": "blond", 
+        "skin_color": "fair", 
+        "eye_color": "blue", 
+        "birth_year": "41.9BBY", 
+        "gender": "male", 
+        "homeworld": "https://swapi.dev/api/planets/1/", 
+        "films": [
+            "https://swapi.dev/api/films/4/", 
+            "https://swapi.dev/api/films/5/", 
+            "https://swapi.dev/api/films/6/"
+        ], 
+        "species": [], 
+        "vehicles": [
+            "https://swapi.dev/api/vehicles/44/", 
+            "https://swapi.dev/api/vehicles/46/"
+        ], 
+        "starships": [
+            "https://swapi.dev/api/starships/39/", 
+            "https://swapi.dev/api/starships/59/", 
+            "https://swapi.dev/api/starships/65/"
+        ], 
+        "created": "2014-12-10T16:20:44.310000Z", 
+        "edited": "2014-12-20T21:17:50.327000Z", 
+        "url": "https://swapi.dev/api/people/11/",
+        "force": {
+            "power": 98,
+            "ability": 95
+        }
+    },
+    {
+        "name": "Darth Vader",
+        "height": "202",
+        "mass": "136",
+        "hair_color": "none",
+        "skin_color": "white",
+        "eye_color": "yellow",
+        "birth_year": "41.9BBY",
+        "gender": "male",
+        "homeworld": "https://swapi.dev/api/planets/1/",
+        "films": [
+            "https://swapi.dev/api/films/1/",
+            "https://swapi.dev/api/films/2/",
+            "https://swapi.dev/api/films/3/",
+            "https://swapi.dev/api/films/6/"
+        ],
+        "species": [],
+        "vehicles": [],
+        "starships": [
+            "https://swapi.dev/api/starships/13/"
+        ],
+        "created": "2014-12-10T15:18:20.704000Z",
+        "edited": "2014-12-20T21:17:50.313000Z",
+        "url": "https://swapi.dev/api/people/4/",
+        "force": {
+            "power": 99,
+            "ability": 99
+        }
+    },
+    {
+        "name": "Palpatine", 
+        "height": "170", 
+        "mass": "75", 
+        "hair_color": "grey", 
+        "skin_color": "pale", 
+        "eye_color": "yellow", 
+        "birth_year": "82BBY", 
+        "gender": "male", 
+        "homeworld": "https://swapi.dev/api/planets/8/", 
+        "films": [
+            "https://swapi.dev/api/films/2/", 
+            "https://swapi.dev/api/films/3/", 
+            "https://swapi.dev/api/films/4/", 
+            "https://swapi.dev/api/films/5/", 
+            "https://swapi.dev/api/films/6/"
+        ], 
+        "species": [], 
+        "vehicles": [], 
+        "starships": [], 
+        "created": "2014-12-15T12:48:05.971000Z", 
+        "edited": "2014-12-20T21:17:50.347000Z", 
+        "url": "https://swapi.dev/api/people/21/",
+        "force": {
+            "power": 98,
+            "ability": 98
+        }
+    },
+    {
+        "name": "Wilhuff Tarkin", 
+        "height": "180", 
+        "mass": "unknown", 
+        "hair_color": "auburn, grey", 
+        "skin_color": "fair", 
+        "eye_color": "blue", 
+        "birth_year": "64BBY", 
+        "gender": "male", 
+        "homeworld": "https://swapi.dev/api/planets/21/", 
+        "films": [
+            "https://swapi.dev/api/films/1/", 
+            "https://swapi.dev/api/films/6/"
+        ], 
+        "species": [], 
+        "vehicles": [], 
+        "starships": [], 
+        "created": "2014-12-10T16:26:56.138000Z", 
+        "edited": "2014-12-20T21:17:50.330000Z", 
+        "url": "https://swapi.dev/api/people/12/",
+        "force": {
+            "power": 90,
+            "ability": 85
+        }
+    },
+    {
+        "name": "Jabba Desilijic Tiure", 
+        "height": "175", 
+        "mass": "1,358", 
+        "hair_color": "n/a", 
+        "skin_color": "green-tan, brown", 
+        "eye_color": "orange", 
+        "birth_year": "600BBY", 
+        "gender": "hermaphrodite", 
+        "homeworld": "https://swapi.dev/api/planets/24/", 
+        "films": [
+            "https://swapi.dev/api/films/1/", 
+            "https://swapi.dev/api/films/3/", 
+            "https://swapi.dev/api/films/4/"
+        ], 
+        "species": [
+            "https://swapi.dev/api/species/5/"
+        ], 
+        "vehicles": [], 
+        "starships": [], 
+        "created": "2014-12-10T17:11:31.638000Z", 
+        "edited": "2014-12-20T21:17:50.338000Z", 
+        "url": "https://swapi.dev/api/people/16/",
+        "force": {
+            "power": 50,
+            "ability": 50
+        }
+    }
+]
