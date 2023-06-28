@@ -1,0 +1,165 @@
+[
+    {
+        "name": "Yoda", 
+        "height": "66", 
+        "mass": "17", 
+        "hair_color": "white", 
+        "skin_color": "green", 
+        "eye_color": "brown", 
+        "birth_year": "896BBY", 
+        "gender": "male", 
+        "homeworld": "https://swapi.dev/api/planets/28/", 
+        "films": [
+            "https://swapi.dev/api/films/2/", 
+            "https://swapi.dev/api/films/3/", 
+            "https://swapi.dev/api/films/4/", 
+            "https://swapi.dev/api/films/5/", 
+            "https://swapi.dev/api/films/6/"
+        ], 
+        "species": [
+            "https://swapi.dev/api/species/6/"
+        ], 
+        "vehicles": [], 
+        "starships": [], 
+        "created": "2014-12-15T12:26:01.042000Z", 
+        "edited": "2014-12-20T21:17:50.345000Z", 
+        "url": "https://swapi.dev/api/people/20/",
+        "force": {
+            "power": 100,
+            "ability": 100
+        }
+    }, 
+    {
+        "name": "Luke Skywalker",
+        "height": "172",
+        "mass": "77",
+        "hair_color": "blond",
+        "skin_color": "fair",
+        "eye_color": "blue",
+        "birth_year": "19BBY",
+        "gender": "male",
+        "homeworld": "https://swapi.dev/api/planets/1/",
+        "films": [
+            "https://swapi.dev/api/films/1/",
+            "https://swapi.dev/api/films/2/",
+            "https://swapi.dev/api/films/3/",
+            "https://swapi.dev/api/films/6/"
+        ],
+        "species": [],
+        "vehicles": [
+            "https://swapi.dev/api/vehicles/14/",
+            "https://swapi.dev/api/vehicles/30/"
+        ],
+        "starships": [
+            "https://swapi.dev/api/starships/12/",
+            "https://swapi.dev/api/starships/22/"
+        ],
+        "created": "2014-12-09T13:50:51.644000Z",
+        "edited": "2014-12-20T21:17:56.891000Z",
+        "url": "https://swapi.dev/api/people/1/",
+        "force": {
+            "power": 95,
+            "ability": 90
+        }
+    }, 
+    {
+        "name": "Leia Organa",
+        "height": "150",
+        "mass": "49",
+        "hair_color": "brown",
+        "skin_color": "light",
+        "eye_color": "brown",
+        "birth_year": "19BBY",
+        "gender": "female",
+        "homeworld": "https://swapi.dev/api/planets/2/",
+        "films": [
+            "https://swapi.dev/api/films/1/",
+            "https://swapi.dev/api/films/2/",
+            "https://swapi.dev/api/films/3/",
+            "https://swapi.dev/api/films/6/"
+        ],
+        "species": [],
+        "vehicles": [
+            "https://swapi.dev/api/vehicles/30/"
+        ],
+        "starships": [],
+        "created": "2014-12-10T15:20:09.791000Z",
+        "edited": "2014-12-20T21:17:50.315000Z",
+        "url": "https://swapi.dev/api/people/5/",
+        "force": {
+            "power": 95,
+            "ability": 80
+        }
+    },
+    {
+        "name": "Obi-Wan Kenobi",
+        "height": "182",
+        "mass": "77",
+        "hair_color": "auburn, white",
+        "skin_color": "fair",
+        "eye_color": "blue-gray",
+        "birth_year": "57BBY",
+        "gender": "male",
+        "homeworld": "https://swapi.dev/api/planets/20/",
+        "films": [
+            "https://swapi.dev/api/films/1/",
+            "https://swapi.dev/api/films/2/",
+            "https://swapi.dev/api/films/3/",
+            "https://swapi.dev/api/films/4/",
+            "https://swapi.dev/api/films/5/",
+            "https://swapi.dev/api/films/6/"
+        ],
+        "species": [],
+        "vehicles": [
+            "https://swapi.dev/api/vehicles/38/"
+        ],
+        "starships": [
+            "https://swapi.dev/api/starships/48/",
+            "https://swapi.dev/api/starships/59/",
+            "https://swapi.dev/api/starships/64/",
+            "https://swapi.dev/api/starships/65/",
+            "https://swapi.dev/api/starships/74/"
+        ],
+        "created": "2014-12-10T16:16:29.192000Z",
+        "edited": "2014-12-20T21:17:50.325000Z",
+        "url": "https://swapi.dev/api/people/10/",
+        "force": {
+            "power": 50,
+            "ability": 90
+        }
+    },
+    {
+        "name": "Chewbacca", 
+        "height": "228", 
+        "mass": "112", 
+        "hair_color": "brown", 
+        "skin_color": "unknown", 
+        "eye_color": "blue", 
+        "birth_year": "200BBY", 
+        "gender": "male", 
+        "homeworld": "https://swapi.dev/api/planets/14/", 
+        "films": [
+            "https://swapi.dev/api/films/1/", 
+            "https://swapi.dev/api/films/2/", 
+            "https://swapi.dev/api/films/3/", 
+            "https://swapi.dev/api/films/6/"
+        ], 
+        "species": [
+            "https://swapi.dev/api/species/3/"
+        ], 
+        "vehicles": [
+            "https://swapi.dev/api/vehicles/19/"
+        ], 
+        "starships": [
+            "https://swapi.dev/api/starships/10/", 
+            "https://swapi.dev/api/starships/22/"
+        ], 
+        "created": "2014-12-10T16:42:45.066000Z", 
+        "edited": "2014-12-20T21:17:50.332000Z", 
+        "url": "https://swapi.dev/api/people/13/",
+        "force": {
+            "power": 80,
+            "ability": 80
+        }
+    }
+]
