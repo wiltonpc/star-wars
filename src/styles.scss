@@ -1,0 +1,82 @@
+/* You can add global styles to this file, and also import other style files */
+@import "@angular/material/prebuilt-themes/purple-green.css";
+
+::ng-deep body{
+    background-color: black !important;
+    color: white;
+    font-family: 'Pathway Gothic One', sans-serif;
+}
+
+.cursor-pointer{
+    cursor: pointer;
+}
+
+.mr-10{
+    margin-right: 10px;
+}
+
+.example-spacer {
+    flex: 1 1 auto;
+}
+
+a {
+    padding: 6px;
+    color: #29495E;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    cursor: pointer;
+
+    &:hover {
+        text-decoration: none;
+        background: #DDDDDD;
+    }
+}
+
+.snackBar-success {
+	background: #51a351 !important;
+	
+	.mat-button-wrapper {
+		color: rgba(255, 255, 255, 0.7) !important;
+	}
+	
+	.ng-star-inserted {
+		color: rgba(255, 255, 255) !important;
+	}
+}
+
+.snackBar-error {
+	background: rgb(244, 67, 54) !important;
+	
+	.mat-button-wrapper {
+		color: rgba(255, 255, 255, 0.7) !important;
+	}
+	
+	.ng-star-inserted {
+		color: rgba(255, 255, 255) !important;
+	}
+}
+
+.snackBar-alert {
+	background: rgb(255, 235, 59) !important;
+	
+	.mat-button-wrapper {
+		color: rgba(0, 0, 0, 0.7) !important;
+	}
+	
+	.ng-star-inserted {
+		color: rgba(0, 0, 0) !important;
+	}
+}
+
+.snackBar-info {
+	background: rgb(33, 150, 243) !important;
+	
+	.mat-button-wrapper {
+		color: rgba(255, 255, 255, 0.7) !important;
+	}
+	
+	.ng-star-inserted {
+		color: rgba(255, 255, 255) !important;
+	}
+}

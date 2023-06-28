@@ -1,0 +1,21 @@
+<ngx-loading [show]="loading" ></ngx-loading>
+<div class="d-flex flex-row flex-wrap container-people">
+    <div class="p-2 card-person" *ngFor="let person of People">
+        <mat-card class="example-card" >
+            <mat-card-header>
+              <mat-card-title>{{person.name}}</mat-card-title>
+            </mat-card-header>
+            <img mat-card-image [src]="'../../../../assets/images/cards/card-'+ (imageExists(person.name)? person.name :'notavailable' )+'.png'" alt="Photo of a Shiba Inu">
+            <mat-card-content>
+            </mat-card-content>
+            <mat-card-actions>
+              <button button mat-button (click)="openModal(person)">More Information</button>
+            </mat-card-actions>
+          </mat-card>
+    </div>
+</div>
+<mat-paginator *ngIf="People.length > 0"
+    (page)="changePage($event)"
+    [length]="length"
+    [pageSize]="pageSize">
+</mat-paginator>

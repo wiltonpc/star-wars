@@ -1,0 +1,10 @@
+<app-top (eventOpened)="opened = $event"></app-top>
+<mat-sidenav-container>
+	<mat-sidenav [(opened)]="opened" mode="side">
+		<app-menu></app-menu>
+	</mat-sidenav>
+	<mat-sidenav-content>
+		<router-outlet></router-outlet>
+		<app-footer></app-footer>
+	</mat-sidenav-content>
+</mat-sidenav-container>

@@ -1,0 +1,118 @@
+<div class="row">
+	<div class="col-5">
+		<mat-toolbar>
+			Jedi Team
+			<span class="example-spacer"></span>
+			<div *ngFor="let item of resultJedi" class="px-1 position-relative">
+				<div class="img-result {{item.force.winner? 'winner' : 'loser'}}"> </div>
+				<img height="50" src="../../../../assets/images/cards/card-{{item.name}}.png">
+			</div>
+			<div class="px-5">
+				{{totalJedi}}
+			</div>
+		</mat-toolbar>
+	</div>
+	<div class="col-2"></div>
+	<div class="col-5">
+		<mat-toolbar>
+		<div class="px-5">
+			{{totalSith}}
+		</div>
+		<div *ngFor="let item of resultSith" class="px-1 position-relative">
+			<div class="img-result {{item.force.winner? 'winner' : 'loser'}}"> </div>
+			<img height="50" src="../../../../assets/images/cards/card-{{item.name}}.png">
+		</div>
+		
+			<span class="example-spacer"></span>
+			Sith Team
+		</mat-toolbar>
+	</div>
+</div>
+<div class="row">
+	<div class="col-2 list-content">
+		<div cdkDropList #cdkJediList="cdkDropList" [cdkDropListData]="listJedi" [cdkDropListConnectedTo]="[cdkJedi]"
+			(cdkDropListDropped)="drop($event)">
+			<div class="list-box" *ngFor="let item of listJedi" cdkDrag [cdkDragDisabled]="jedi.length > 0">
+				<div class="row">
+					<div class="col-4"> <img width="60px" src="../../../../assets/images/cards/card-{{item.name}}.png">
+					</div>
+					<div class="col-8">
+						<div class="fw-bold">{{item.name}}</div>
+						<div> Power <mat-progress-bar mode="determinate" [value]="item.force.power"></mat-progress-bar>
+						</div>
+						<div> Ability <mat-progress-bar mode="determinate" [value]="item.force.ability"></mat-progress-bar>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="col-3 d-flex justify-content-center align-items-center">
+		<div id="jedi" class="arena jedi d-flex justify-content-center align-items-center" cdkDropList
+			#cdkJedi="cdkDropList" [cdkDropListData]="jedi" [cdkDropListConnectedTo]="[cdkJediList]"
+			(cdkDropListDropped)="drop($event)">
+			<div *ngIf="jedi.length < 1">Drop Card Here</div>
+			<div class="example-box" *ngFor="let item of jedi" cdkDrag>
+				<mat-card class="example-card">
+					<mat-card-header>
+						{{item.name}}
+					</mat-card-header>
+					<img mat-card-image src="../../../../assets/images/cards/card-{{item.name}}.png">
+					<mat-card-content>
+					</mat-card-content>
+					<mat-card-actions>
+						Power <mat-progress-bar mode="determinate" [value]="item.force.power"></mat-progress-bar>
+						Ability <mat-progress-bar mode="determinate"  [value]="item.force.ability"></mat-progress-bar>
+					</mat-card-actions>
+				</mat-card>
+			</div>
+		</div>
+	</div>
+	<div class="col-2 d-flex justify-content-center align-items-center"><img src="../../../../assets/images/sabres.png">
+	</div>
+	<div class="col-3 d-flex justify-content-center align-items-center">
+		<div id="sith" class="arena sith d-flex justify-content-center align-items-center" cdkDropList
+			#cdkSith="cdkDropList" [cdkDropListData]="sith" [cdkDropListConnectedTo]="[cdkSithList]"
+			(cdkDropListDropped)="drop($event)">
+			<div *ngIf="sith.length < 1">Drop Card Here</div>
+			<div class="example-box" *ngFor="let item of sith" cdkDrag>
+				<mat-card class="example-card">
+					<mat-card-header>
+						{{item.name}}
+					</mat-card-header>
+					<img mat-card-image src="../../../../assets/images/cards/card-{{item.name}}.png">
+					<mat-card-content>
+					</mat-card-content>
+					<mat-card-actions>
+						Power <mat-progress-bar mode="determinate" [value]="item.force.power"></mat-progress-bar>
+						Ability <mat-progress-bar mode="determinate" [value]="item.force.ability"></mat-progress-bar>
+					</mat-card-actions>
+				</mat-card>
+			</div>
+		</div>
+	</div>
+	<div class="col-2 list-content">
+		<div cdkDropList #cdkSithList="cdkDropList" [cdkDropListData]="listSith" [cdkDropListConnectedTo]="[cdkSith]"
+			(cdkDropListDropped)="drop($event)">
+			<div class="list-box" *ngFor="let item of listSith" cdkDrag [cdkDragDisabled]="sith.length > 0">
+				<div class="row">
+					<div class="col-4"> <img width="60px" src="../../../../assets/images/cards/card-{{item.name}}.png">
+					</div>
+					<div class="col-8">
+						<div class="fw-bold">{{item.name}}</div>
+						<div> Power <mat-progress-bar mode="determinate" [value]="item.force.power"></mat-progress-bar>
+						</div>
+						<div> Ability <mat-progress-bar mode="determinate"  [value]="item.force.ability"></mat-progress-bar>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+</div>
+<mat-toolbar class="mt-2">
+	<span class="example-spacer"></span>
+	<button *ngIf="jedi.length > 0  && sith.length > 0" mat-fab color="primary" (click)="matchCard()"> <mat-icon>play_arrow</mat-icon> </button>
+	<span class="example-spacer"></span>
+</mat-toolbar>
